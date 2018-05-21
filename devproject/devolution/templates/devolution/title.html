@@ -1,0 +1,7 @@
+
+<h1 id="devo_title">{{ devo.title }}</h1>
+<p id="devo_description">{{ devo.description }}</p>
+<div>
+    <a href="{% url 'devolution:contents' devo.short_name %}">Table of Contents</a>
+    <a href="{% url 'devolution:entry' devo.short_name 0">Get Started</a>
+</div>

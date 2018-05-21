@@ -1,0 +1,8 @@
+
+<h1>Devotionals</h1>
+<ul>
+{% for devo in devotionals_list %}
+    <li><a href="{% url 'devolution:title' devo.short_name %}">{{ devo.title }}</a></li>
+{% endfor %}
+</ul>
+

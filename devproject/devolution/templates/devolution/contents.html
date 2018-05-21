@@ -1,0 +1,9 @@
+
+<h1 id="devo_title">{{ devo.title }}</h1>
+<ol>
+    {% for entry in entries %}
+    <li><a href="{% url 'devolution:entry' devo.short_name entry.short_name %}">{{ entry.title }}</a></li>
+    {% endfor %}
+
+</ol>
+
